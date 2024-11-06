@@ -239,7 +239,7 @@ class ProjectsSection extends StatelessWidget {
             rn: 'React Native',
             ktl: '',
             description: 'App de Asesorias.',
-            imageUrl: '', // Asegúrate de agregar esta imagen en tus assets
+            imageUrl: 'assets/mitu.png', // Asegúrate de agregar esta imagen en tus assets
           ),
         ],
       ),

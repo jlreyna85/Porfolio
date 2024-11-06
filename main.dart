@@ -80,7 +80,6 @@ class PortfolioPage extends StatelessWidget {
             // seccion de Sobre mí
             WhoiamSection(),
             // Sección de Contacto
-            ContactSection(),
           ],
         ),
       ),
