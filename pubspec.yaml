@@ -1,0 +1,32 @@
+name: tst
+description: "A new Flutter project."
+publish_to: 'none' # Evita publicación accidental en pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4 # Asegúrate de que esta versión sea compatible con tu Flutter SDK
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_animate: ^2.0.0
+  cupertino_icons: ^1.0.8 # Para iconos de estilo iOS
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0 # Recomendado para buenas prácticas de código
+
+flutter:
+  uses-material-design: true
+  # Especifica la carpeta de imágenes
+  assets:
+  - assets/myqr.png
+
+  # Para añadir fuentes personalizadas en el futuro:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
