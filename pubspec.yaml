@@ -9,13 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_animate: ^2.0.0
+  flutter_animate: ^4.5.0
   cupertino_icons: ^1.0.8 # Para iconos de estilo iOS
+  fluttericon: ^2.0.0
+  flutter_svg: ^2.0.14
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0 # Recomendado para buenas prácticas de código
+  flutter_lints: ^5.0.0 # Recomendado para buenas prácticas de código
 
 flutter:
   uses-material-design: true
@@ -23,6 +26,14 @@ flutter:
   assets:
   - assets/myqr.png
   - assets/mitu.png
+  - assets/profile.jpg
+  - assets/icons/android.svg
+  - assets/icons/kotlin.svg
+  - assets/icons/react.svg
+  - assets/icons/typescript.svg
+  - assets/icons/linkedin.svg
+  - assets/icons/firebase.svg
+  
 
 
   # Para añadir fuentes personalizadas en el futuro:
