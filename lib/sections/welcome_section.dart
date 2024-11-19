@@ -42,7 +42,8 @@ class WelcomeSection extends StatelessWidget {
             ,style: TextStyle(fontSize: 20)
             ),
           const SizedBox(height: 20),
-          Row(
+          Wrap(
+            runSpacing: 8.0,
             children: [
               TextButton.icon(
                 onPressed: _launchEmail,
@@ -63,6 +64,16 @@ class WelcomeSection extends StatelessWidget {
                 icon: const Icon(FontAwesome.linkedin),
                 label: const Text('LinkedIn'),
               ),
+              const SizedBox(width: 16), // Espaciado entre botones
+              TextButton.icon(
+                onPressed: _launchGithub,
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.blue.shade50,
+                  foregroundColor: Colors.green,
+                  ),
+                icon: const Icon(FontAwesome.github),
+                label: const Text('Github'),
+              ),
             ],
           ),
         ],
@@ -79,4 +90,8 @@ void _launchEmail() {
 void _launchLinkedIn() {
   // Llama al método para abrir LinkedIn desde launch_utils
   LaunchUtils.launchURL('https://www.linkedin.com/in/firg28/');
+}
+
+void _launchGithub(){
+  LaunchUtils.launchURL('https://github.com/jlreyna85');
 }
